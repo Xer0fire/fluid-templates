@@ -1,0 +1,13 @@
+<f:layout name="xg-image-menu" />
+<f:section name="xg-image-menu">
+<!-- Page Content -->
+<div class="container">
+<f:render partial="breadcrumb" arguments="{_all}" />
+<f:render partial="pageheader" arguments="{_all}" />
+<div class="row">
+    <div class="col-md-12">
+        <f:format.raw>{image-menu}</f:format.raw>
+        <f:cObject typoscriptObjectPath="lib.content.image-menu" />
+    </div>
+</div>
+</f:section>

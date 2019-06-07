@@ -1,0 +1,28 @@
+<f:comment>
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<div class="row">
+    <v:iterator.loop iteration="xg-service" count="4" minimum="1" maximum="4">
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <span class="fa-stack fa-5x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-<v:variable.get name="settings.service.{xg-service.index}.icon"/> fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <h4><v:variable.get name="settings.service.{xg-service.index}.head"/></h4>
+                    <p><v:variable.get name="settings.service.{xg-service.index}.desc"/></p>
+                    <a href="<v:variable.get name="settings.service.{xg-service.index}.link.uid"/>" class="btn btn-primary"><v:variable.get name="settings.service.{xg-service.index}.link.text"/></a>
+                </div>
+            </div>
+        </div>
+    </v:iterator.loop>
+</div>
+<!-- /.row -->
+</f:comment>
+
+<div class="row">
+    <f:cObject typoscriptObjectPath="lib.content.services" />
+</div>
+<!-- /.row -->
