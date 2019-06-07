@@ -1,0 +1,319 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="xmm-layout" />
+<f:section name="xmm-main">
+<f:for each="{settings.sections.layouts}" as="xmm-main" key="xmm-label" iteration="xmm-main-for">
+    <f:switch expression="{xmm-main}">
+        <f:case value="1">
+            <f:comment>
+                1: Template: Full Width
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 --> 
+                    </div>
+                    <!-- end row --> 
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="2">
+            <f:comment>
+                2: Template: Full Width Top - Two Columns Below
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-bottom-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-bottom-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->    
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="3">
+            <f:comment>
+                3: Template: Two Columns Top - Full Width Below
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-top-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-top-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-bottom-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="4">
+            <f:comment>
+                4: Template: Full Width Top - Two Columns Middle - Full Width Below
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-bottom-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="5">
+            <f:comment>
+                5: Template: Full Width Top - Three Columns Middle | 3rd Column Icon Picture - Full Width Below
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <v:variable.get name="sc-mid-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-5 -->
+                        <div class="col-md-5">
+                            <v:variable.get name="sc-mid-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-5 -->
+                        <div class="col-md-2">
+                            <v:variable.get name="sc-mid-icon-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-2 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-bottom-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="6">
+            <f:comment>
+                6: Template: Full Width Top - Two Columns Bottom | 2nd Column Icon Picture
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-10">
+                            <v:variable.get name="sc-bottom-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-10 -->
+                        <div class="col-md-2">
+                            <v:variable.get name="sc-bottom-icon-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-2"> -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="7">
+            <f:comment>
+                7: Template: Full Width Top - Full Width Row with Two Columns x3 - Full Width Bottom
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-mid-1-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-1-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-1-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6"> -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-mid-2-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-2-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-2-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6"> -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-mid-3-top-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-3-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-3-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6"> -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <v:variable.get name="sc-bottom-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-12 -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+        <f:case value="8">
+            <f:comment>
+                8: Template: Full Width Row with Two Columns Top - Full Width Row with Two Columns Mid - Full Width Row with Two Columns Bottom
+            </f:comment>
+            <section class="section-block full-width-container" id="section-{xmm-main-for.cycle}">
+                <div class="container">
+                    <f:render partial="sectionheading" arguments="{_all}" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-top-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-top-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-mid-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-bottom-left-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                        <div class="col-md-6">
+                            <v:variable.get name="sc-bottom-right-{xmm-main-for.cycle}"/>
+                        </div>
+                        <!-- end col-md-6 -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container --> 
+            </section>
+            <!-- end section-{xmm-main-for.cycle} -->
+        </f:case>
+    </f:switch>
+<f:render partial="divider" arguments="{_all}" />
+</f:for>
+</f:section>
